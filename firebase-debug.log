@@ -1,0 +1,35 @@
+[debug] [2023-09-18T02:24:35.196Z] ----------------------------------------------------------------------
+[debug] [2023-09-18T02:24:35.197Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\willi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2023-09-18T02:24:35.198Z] CLI Version:   12.5.4
+[debug] [2023-09-18T02:24:35.198Z] Platform:      win32
+[debug] [2023-09-18T02:24:35.198Z] Node Version:  v18.17.0
+[debug] [2023-09-18T02:24:35.199Z] Time:          Sun Sep 17 2023 22:24:35 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-09-18T02:24:35.199Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-18T02:24:35.258Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-18T02:24:35.259Z] > authorizing via signed-in user (william090601@gmail.com)
+[debug] [2023-09-18T02:24:35.259Z] [iam] checking project connect-a-bull for permissions ["firebase.projects.get"]
+[debug] [2023-09-18T02:24:35.261Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/connect-a-bull:testIamPermissions [none]
+[debug] [2023-09-18T02:24:35.261Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/connect-a-bull:testIamPermissions x-goog-quota-user=projects/connect-a-bull
+[debug] [2023-09-18T02:24:35.261Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/connect-a-bull:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-09-18T02:24:35.461Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/connect-a-bull:testIamPermissions 200
+[debug] [2023-09-18T02:24:35.461Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/connect-a-bull:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-09-18T02:24:35.462Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/connect-a-bull [none]
+[debug] [2023-09-18T02:24:35.717Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/connect-a-bull 200
+[debug] [2023-09-18T02:24:35.717Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/connect-a-bull {"projectId":"connect-a-bull","projectNumber":"164380745109","displayName":"Connect-A-Bull","name":"projects/connect-a-bull","resources":{"hostingSite":"connect-a-bull","realtimeDatabaseInstance":"connect-a-bull-default-rtdb","storageBucket":"connect-a-bull.appspot.com","locationId":"us-east1"},"state":"ACTIVE","etag":"1_e0aacab9-d00d-4507-85b7-c79883b6dfc0"}
+[info] 
+[info] === Serving from 'C:\Users\willi\Documents'...
+[info] 
+[debug] [2023-09-18T02:24:35.720Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/connect-a-bull/sites 
+[debug] [2023-09-18T02:24:36.134Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/connect-a-bull/sites 200
+[debug] [2023-09-18T02:24:36.134Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/connect-a-bull/sites {"sites":[{"name":"projects/connect-a-bull/sites/connect-a-bull","defaultUrl":"https://connect-a-bull.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-09-18T02:24:36.134Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/connect-a-bull/webApps/-/config [none]
+[debug] [2023-09-18T02:24:36.535Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/connect-a-bull/webApps/-/config 200
+[debug] [2023-09-18T02:24:36.535Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/connect-a-bull/webApps/-/config {"projectId":"connect-a-bull","appId":"1:164380745109:web:6587e92aebce07c517aa9c","databaseURL":"https://connect-a-bull-default-rtdb.firebaseio.com","storageBucket":"connect-a-bull.appspot.com","locationId":"us-east1","apiKey":"AIzaSyDzNROGQICeKSZsNMqyPNqiW0AHNWuopX8","authDomain":"connect-a-bull.firebaseapp.com","messagingSenderId":"164380745109","measurementId":"G-1C6C77VZT2"}
+[debug] [2023-09-18T02:24:36.539Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/connect-a-bull [none]
+[debug] [2023-09-18T02:24:36.747Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/connect-a-bull 200
+[debug] [2023-09-18T02:24:36.747Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/connect-a-bull {"projectId":"connect-a-bull","projectNumber":"164380745109","displayName":"Connect-A-Bull","name":"projects/connect-a-bull","resources":{"hostingSite":"connect-a-bull","realtimeDatabaseInstance":"connect-a-bull-default-rtdb","storageBucket":"connect-a-bull.appspot.com","locationId":"us-east1"},"state":"ACTIVE","etag":"1_e0aacab9-d00d-4507-85b7-c79883b6dfc0"}
+[debug] [2023-09-18T02:24:36.748Z] Specified "public" directory "public" does not exist; Deploy to Hosting site "connect-a-bull" may fail or be empty.
+[info] i  hosting[connect-a-bull]: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting[connect-a-bull]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [18/Sep/2023:02:24:41 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [18/Sep/2023:02:24:41 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36\""}}
